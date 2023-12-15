@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mighty Ducks Hockey League</title>
     <link rel="stylesheet" href="/style/mdhl.css">
+    <link rel="shortcut icon" href="/img/Logo Mighty ducks-01.png" type="image/x-icon">
 </head>
 <body>
     
@@ -16,8 +17,9 @@
             <li><a href="/html/schedule.html">Schedule</a></li>
             <li><a href="/html/rules.html">Rules</a></li>
             <li><a href="/html/about.html">About MDHL</a></li>
-            <li><a href="/html/contact.html">Contact</a></li>
             <li style="background-color: rgb(72, 247, 72);"><a href="/html/form.html">Inscriptions</a></li>
+            <li><a href="/html/contact.html">Contact</a></li>
+
         </ul>
     </nav>
 
@@ -29,23 +31,35 @@
     <form action="/show_data.html" id="fsMain">
         <fieldset>
             <legend>Registration Form</legend>
-            <label for="nombre">Player's first name:</label>
-            <input type="text" name="firstName" id="nombre" placeholder="Ej: Martin">
-
-            <label for="apellido">Last name</label>
-            <input type="text" name="lastName" id="apellido" placeholder="Ej: Sanchez">
-
-            <label for="direccion">Street address</label>
-            <input type="text" name="address" id="direccion" placeholder="Ej: Av. Belgrano 5000">
+            <section>
+                <label for="nombre">Player's first name:</label>
+                <input type="text" name="firstName" id="nombre" placeholder="Ej: Martin">
+            </section>    
             
-            <label for="ciudad">City</label>
-            <input type="text" name="city" id="ciudad" placeholder="Ej: Tucuman">
+            <section>
+                <label for="apellido">Last name</label>
+                <input type="text" name="lastName" id="apellido" placeholder="Ej: Sanchez">
+            </section>
 
-            <label for="zip">Zip code:</label>
-            <input type="number" name="zipCode" id="zip" placeholder="Ej: 4000">
+            <section>
+                <label for="direccion">Street address</label>
+                <input type="text" name="address" id="direccion" placeholder="Ej: Av. Belgrano 5000">
+            </section>    
+        
+            <section>    
+                <label for="ciudad">City</label>
+                <input type="text" name="city" id="ciudad" placeholder="Ej: Tucuman">
+            </section>
+            
+            <section>
+                <label for="zip">Zip code:</label>
+                <input type="number" name="zipCode" id="zip" placeholder="Ej: 4000">
+            </section>
 
-            <label for="fecNac">Birth date (mm/dd/yyyy)</label>
-            <input type="date" name="birthDate" id="fecNac">
+            <section>
+                <label for="fecNac">Birth date (mm/dd/yyyy)</label>
+                <input type="date" name="birthDate" id="fecNac">
+            </section>
 
             <fieldset>
                 <legend>Gender: </legend>
@@ -105,16 +119,16 @@
             <fieldset>
                 <legend>What position(s) do you normally play? (check if all that apply)</legend>
                 <label>Forward
-                    <input type="radio" name="position" value="fw">
+                    <input type="checkbox" name="position" value="fw">
                 </label>
                 <label>Midfield
-                    <input type="radio" name="position" value="mf">
+                    <input type="checkbox" name="position" value="mf">
                 </label>
                 <label>Defense
-                    <input type="radio" name="position" value="def">
+                    <input type="checkbox" name="position" value="def">
                 </label>
                 <label>Goalkeeper
-                    <input type="radio" name="position" value="gk">
+                    <input type="checkbox" name="position" value="gk">
                 </label>
             </fieldset>
 
