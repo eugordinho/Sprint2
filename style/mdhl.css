@@ -72,7 +72,22 @@ aside{
 
 #mainFs{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 60%;
+    margin: 20px;
+    padding: 5px;
+
+}
+
+#fsMain{
+    width: 45%;
+    border-style: none;
+}
+
+fieldset{
+    padding: 5px;
+    border-style: none;
+
+}
+
+label{
+    margin: 3px;
 }

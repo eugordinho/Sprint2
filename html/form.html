@@ -25,8 +25,8 @@
         <img src="/img/design1_image2.jpg" alt="" id="img1">
     </header>
 
-<main>
-    <form action="/show_data.html" id="mainFs">
+<main id="mainFs">
+    <form action="/show_data.html" id="fsMain">
         <fieldset>
             <legend>Registration Form</legend>
             <label for="nombre">Player's first name:</label>
@@ -80,9 +80,86 @@
             </fieldset>
 
             <fieldset>
-
+                <legend>Which elementary school do you live near?</legend>
+                <label>Closest School:</label>
+                <label>Aj Katzenmaier
+                    <input type="radio" name="closeSchool" value="ajk">
+                </label>
+                <label>Marjorie P Hart
+                    <input type="radio" name="closeSchool" value="mph">
+                </label>
+                <label>Greenbay
+                    <input type="radio" name="closeSchool" value="gbay">
+                </label>
+                <label>North elementary
+                    <input type="radio" name="closeSchool" value="ne">
+                </label>
+                <label>Howard A Yeager
+                    <input type="radio" name="closeSchool" value="hay">
+                </label>
+                <label>South elementary
+                    <input type="radio" name="closeSchool" value="se">
+                </label>
             </fieldset>
+
+            <fieldset>
+                <legend>What position(s) do you normally play? (check if all that apply)</legend>
+                <label>Forward
+                    <input type="radio" name="position" value="fw">
+                </label>
+                <label>Midfield
+                    <input type="radio" name="position" value="mf">
+                </label>
+                <label>Defense
+                    <input type="radio" name="position" value="def">
+                </label>
+                <label>Goalkeeper
+                    <input type="radio" name="position" value="gk">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Uniform Size:</legend>
+                <label>Youth Small
+                    <input type="radio" name="size" value="ys">
+                </label>
+                <label>Medium
+                    <input type="radio" name="size" value="m">
+                </label>
+                <label>Youth Medium
+                    <input type="radio" name="size" value="ym">
+                </label>
+                <label>Large
+                    <input type="radio" name="size" value="l">
+                </label>
+                <label>Youth Large
+                    <input type="radio" name="size" value="yl">
+                </label>
+                <label>Extra-Large
+                    <input type="radio" name="size" value="xl">
+                </label>
+                <label>Small
+                    <input type="radio" name="size" value="s">
+                </label>
+            </fieldset>
+        </fieldset> 
+
+        <fieldset>
+            <legend>Permission to Play</legend>
+            <label>
+                I, the parent or guardian of the minor registrant, agree that the registrant and i will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, i hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, agains any claim by or on behalf of the registrant as a result of registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities, which transportation.
+
+            </label>
+            <label>
+                By signing below, I here by agree and authorize the above. In addition, by signing below, I also acknowledge that i have read the cancellation policy and agree to its terms.
+            </label>
         </fieldset>
+
+        <label for="firma">Parent/Guardian Signature</label>
+        <input type="text" name="firm" id="firma">
+
+        <label for="datefirma">Date</label>
+        <input type="text" name="date" id="datefirma">
 
         <input type="submit" value="Enviar">
     </form>
