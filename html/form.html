@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mighty Ducks Hockey League</title>
+    <link rel="stylesheet" href="/style/mdhl.css">
+</head>
+<body>
+    
+    <nav id="nav">
+        <h1>Mighty Ducks Hockey League</h1>
+    
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/html/schedule.html">Schedule</a></li>
+            <li><a href="/html/rules.html">Rules</a></li>
+            <li><a href="/html/about.html">About MDHL</a></li>
+            <li><a href="/html/contact.html">Contact</a></li>
+            <li style="background-color: rgb(72, 247, 72);"><a href="/html/form.html">Inscriptions</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="/img/design1_image2.jpg" alt="" id="img1">
+    </header>
+
+<main>
+    <form action="/show_data.html" id="mainFs">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <label for="nombre">Player's first name:</label>
+            <input type="text" name="firstName" id="nombre" placeholder="Ej: Martin">
+
+            <label for="apellido">Last name</label>
+            <input type="text" name="lastName" id="apellido" placeholder="Ej: Sanchez">
+
+            <label for="direccion">Street address</label>
+            <input type="text" name="address" id="direccion" placeholder="Ej: Av. Belgrano 5000">
+            
+            <label for="ciudad">City</label>
+            <input type="text" name="city" id="ciudad" placeholder="Ej: Tucuman">
+
+            <label for="zip">Zip code:</label>
+            <input type="number" name="zipCode" id="zip" placeholder="Ej: 4000">
+
+            <label for="fecNac">Birth date (mm/dd/yyyy)</label>
+            <input type="date" name="birthDate" id="fecNac">
+
+            <fieldset>
+                <legend>Gender: </legend>
+                <label>Female
+                    <input type="radio" name="genre" value="female">
+                </label>
+                <label>Male
+                    <input type="radio" name="genre" value="male">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Grade: </legend>
+                <label>Pre-School
+                    <input type="radio" name="grade" value="pre-school">
+                </label>
+                <label>1st
+                    <input type="radio" name="grade" value="firstYear">
+                </label>
+                <label>2nd
+                    <input type="radio" name="grade" value="secondYear">
+                </label>
+                <label>3rd
+                    <input type="radio" name="grade" value="thirdYear">
+                </label>
+                <label>4th
+                    <input type="radio" name="grade" value="fourthYear">
+                </label>
+                <label>5th
+                    <input type="radio" name="grade" value="lastYear">
+                </label>
+            </fieldset>
+
+            <fieldset>
+
+            </fieldset>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+</main>
